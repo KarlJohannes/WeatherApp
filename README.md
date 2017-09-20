@@ -1,0 +1,2 @@
+# WeatherApp
+Automaat-testimine
