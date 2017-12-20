@@ -14,6 +14,8 @@ public class CurrentWeather {
     private String city;
     private JSONObject jsonObject;
 
+    public CurrentWeather() {}
+
     public CurrentWeather(String city) {
         this.city = city;
 
@@ -39,7 +41,7 @@ public class CurrentWeather {
             jsonObject = new JSONObject(sb.toString());
 
         } catch (IOException | JSONException e) {
-            e.printStackTrace();
+            System.err.println("Linna ei leitud!");
         }
 
     }
@@ -47,8 +49,8 @@ public class CurrentWeather {
     public Double getCurrentTemperature() {
         try {
             return jsonObject.getJSONObject("main").getDouble("temp");
-        } catch (JSONException e) {
-            e.printStackTrace();
+        } catch (JSONException | NullPointerException e) {
+            // Ei kuva midagi, sest linna mitte leidmise teade on varem välja antud
         }
         return null;
     }
@@ -62,4 +64,21 @@ public class CurrentWeather {
         return "";
     }
 
+    public String getCoordinates() {
+        try {
+            JSONObject coord = jsonObject.getJSONObject("coord");
+            return "lon: " + coord.getDouble("lon") + ", lat: " + coord.getDouble("lat");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setJsonObject(JSONObject jsonObject) {
+        this.jsonObject = jsonObject;
+    }
 }

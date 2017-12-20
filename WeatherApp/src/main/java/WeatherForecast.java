@@ -48,7 +48,7 @@ public class WeatherForecast {
             jsonObject = new JSONObject(sb.toString());
 
         } catch (IOException | JSONException e) {
-            e.printStackTrace();
+            System.err.println("Linna ei leitud!");
         }
 
     }
@@ -74,7 +74,7 @@ public class WeatherForecast {
             return null;
         }
 
-        LocalDateTime d = LocalDateTime.from(currentDate.toInstant().atZone(ZoneId.of("UTC+03:00"))).plusDays(1);
+        LocalDateTime d = LocalDateTime.from(currentDate.toInstant().atZone(ZoneId.of("UTC+03:00"))).plusDays(day);
         String date = d.format(dateFormat);
 
         // Käime ilmaennustuste listi läbi for tsükliga ja kui ennustuse kuupäev

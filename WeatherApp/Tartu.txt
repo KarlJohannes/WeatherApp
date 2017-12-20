@@ -1,0 +1,8 @@
+Tartu
+Koordinaadid: lon: 26.73, lat: 58.38
+Hetkeilm: 
+Tartu: 1.0
+Ilmaennustus: 
+Päev 1: min = -3.73 ja max = -0.6
+Päev 2: min = -3.79 ja max = -0.32
+Päev 3: min = -8.55 ja max = -1.11

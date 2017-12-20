@@ -1,0 +1,8 @@
+New York
+Koordinaadid: lon: -74.01, lat: 40.71
+Hetkeilm: 
+New York: -8.09
+Ilmaennustus: 
+Päev 1: min = -4.66 ja max = 1.64
+Päev 2: min = -7.39 ja max = 2.32
+Päev 3: min = -2.92 ja max = 3.97
