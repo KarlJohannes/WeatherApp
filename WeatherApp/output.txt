@@ -1,0 +1,6 @@
+Hetkeilm: 
+Tallinn: 1.0
+Ilmaennustus: 
+Päev 1: min = -0.74 ja max = 2.03
+Päev 2: min = -3.93 ja max = 1.62
+Päev 3: min = -4.02 ja max = -0.33

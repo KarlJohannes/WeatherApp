@@ -1,0 +1,8 @@
+Miami
+Koordinaadid: lon: -80.19, lat: 25.77
+Hetkeilm: 
+Miami: 11.62
+Ilmaennustus: 
+Päev 1: min = 10.19 ja max = 26.75
+Päev 2: min = 18.87 ja max = 27.81
+Päev 3: min = 20.4 ja max = 27.79
